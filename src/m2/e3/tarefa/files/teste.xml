@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<dados>
+		<despesa>
+				<nomeParlamentar>LIDERANÇA DO CIDADANIA</nomeParlamentar>
+				<cpf></cpf>
+				<idDeputado></idDeputado>
+				<numeroCarteiraParlamentar></numeroCarteiraParlamentar>
+				<legislatura>2019</legislatura>
+				<siglaUF>NA</siglaUF>
+				<siglaPartido></siglaPartido>
+				<codigoLegislatura>56</codigoLegislatura>
+				<numeroSubCota>13</numeroSubCota>
+				<descricao>FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR</descricao>
+				<numeroEspecificacaoSubCota>0</numeroEspecificacaoSubCota>
+				<descricaoEspecificacao></descricaoEspecificacao>
+				<fornecedor>ARTESANAL SERVICOS DE ALIMENTACAO E BUFFET EIRELI</fornecedor>
+				<cnpjCPF>228.362.100/0015-7 </cnpjCPF>
+				<numero>104</numero>
+				<tipoDocumento>4</tipoDocumento>
+				<dataEmissao>2021-03-04T00:00:00</dataEmissao>
+				<valorDocumento>999.96</valorDocumento>
+				<valorGlosa>0</valorGlosa>
+				<valorLiquido>999.96</valorLiquido>
+				<mes>3</mes>
+				<ano>2021</ano>
+				<parcela>0</parcela>
+				<passageiro></passageiro>
+				<trecho></trecho>
+				<lote>1751471</lote>
+				<ressarcimento></ressarcimento>
+				<restituicao></restituicao>
+				<numeroDeputadoID>3453</numeroDeputadoID>
+				<idDocumento>7165735</idDocumento>
+				<urlDocumento>http://camara.leg.br/cota-parlamentar/nota-fiscal-eletronica?ideDocumentoFiscal=7165735</urlDocumento>
+		</despesa>
+		<despesa>
+				<nomeParlamentar>Junio Amaral</nomeParlamentar>
+				<cpf>07554049631</cpf>
+				<idDeputado>204520</idDeputado>
+				<numeroCarteiraParlamentar>225</numeroCarteiraParlamentar>
+				<legislatura>2019</legislatura>
+				<siglaUF>MG</siglaUF>
+				<siglaPartido>PSL</siglaPartido>
+				<codigoLegislatura>56</codigoLegislatura>
+				<numeroSubCota>122</numeroSubCota>
+				<descricao>SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO</descricao>
+				<numeroEspecificacaoSubCota>0</numeroEspecificacaoSubCota>
+				<descricaoEspecificacao></descricaoEspecificacao>
+				<fornecedor>CONCESSIONARIA DA RODOVIA MG-050 S/A</fornecedor>
+				<cnpjCPF>088.227.670/0010-8 </cnpjCPF>
+				<numero>220772FIQX15</numero>
+				<tipoDocumento>1</tipoDocumento>
+				<dataEmissao>2021-02-17T00:00:00</dataEmissao>
+				<valorDocumento>6.4</valorDocumento>
+				<valorGlosa>0</valorGlosa>
+				<valorLiquido>6.4</valorLiquido>
+				<mes>2</mes>
+				<ano>2021</ano>
+				<parcela>0</parcela>
+				<passageiro></passageiro>
+				<trecho></trecho>
+				<lote>1747968</lote>
+				<ressarcimento></ressarcimento>
+				<restituicao></restituicao>
+				<numeroDeputadoID>3399</numeroDeputadoID>
+				<idDocumento>7159681</idDocumento>
+				<urlDocumento>https://www.camara.leg.br/cota-parlamentar/documentos/publ/3399/2021/7159681.pdf</urlDocumento>
+		</despesa>
+		<despesa>
+				<nomeParlamentar>Sebastião Oliveira</nomeParlamentar>
+				<cpf>73387789491</cpf>
+				<idDeputado>178921</idDeputado>
+				<numeroCarteiraParlamentar>159</numeroCarteiraParlamentar>
+				<legislatura>2019</legislatura>
+				<siglaUF>PE</siglaUF>
+				<siglaPartido>AVANTE</siglaPartido>
+				<codigoLegislatura>56</codigoLegislatura>
+				<numeroSubCota>3</numeroSubCota>
+				<descricao>COMBUSTÍVEIS E LUBRIFICANTES.</descricao>
+				<numeroEspecificacaoSubCota>1</numeroEspecificacaoSubCota>
+				<descricaoEspecificacao>Veículos Automotores</descricaoEspecificacao>
+				<fornecedor>S B COMERCIO DE PETROLEO LTDA</fornecedor>
+				<cnpjCPF>108.870.860/0017-0 </cnpjCPF>
+				<numero>181308</numero>
+				<tipoDocumento>4</tipoDocumento>
+				<dataEmissao>2021-02-26T00:00:00</dataEmissao>
+				<valorDocumento>100</valorDocumento>
+				<valorGlosa>0</valorGlosa>
+				<valorLiquido>100</valorLiquido>
+				<mes>2</mes>
+				<ano>2021</ano>
+				<parcela>0</parcela>
+				<passageiro></passageiro>
+				<trecho></trecho>
+				<lote>1748532</lote>
+				<ressarcimento></ressarcimento>
+				<restituicao></restituicao>
+				<numeroDeputadoID>3067</numeroDeputadoID>
+				<idDocumento>7160867</idDocumento>
+				<urlDocumento>http://camara.leg.br/cota-parlamentar/nota-fiscal-eletronica?ideDocumentoFiscal=7160867</urlDocumento>
+		</despesa>
+		<despesa>
+				<nomeParlamentar>Vivi Reis</nomeParlamentar>
+				<cpf>01141871262</cpf>
+				<idDeputado>215044</idDeputado>
+				<numeroCarteiraParlamentar>570</numeroCarteiraParlamentar>
+				<legislatura>2019</legislatura>
+				<siglaUF>PA</siglaUF>
+				<siglaPartido>PSOL</siglaPartido>
+				<codigoLegislatura>56</codigoLegislatura>
+				<numeroSubCota>4</numeroSubCota>
+				<descricao>CONSULTORIAS, PESQUISAS E TRABALHOS TÉCNICOS.</descricao>
+				<numeroEspecificacaoSubCota>0</numeroEspecificacaoSubCota>
+				<descricaoEspecificacao></descricaoEspecificacao>
+				<fornecedor>PAULA FRASSINETTI MATTOS ADVOGADOS ASSOCIADOS</fornecedor>
+				<cnpjCPF>042.057.250/0017-7 </cnpjCPF>
+				<numero>00000694</numero>
+				<tipoDocumento>0</tipoDocumento>
+				<dataEmissao>2021-05-19T00:00:00</dataEmissao>
+				<valorDocumento>5000</valorDocumento>
+				<valorGlosa>0</valorGlosa>
+				<valorLiquido>5000</valorLiquido>
+				<mes>5</mes>
+				<ano>2021</ano>
+				<parcela>0</parcela>
+				<passageiro></passageiro>
+				<trecho></trecho>
+				<lote>1765582</lote>
+				<ressarcimento></ressarcimento>
+				<restituicao></restituicao>
+				<numeroDeputadoID>3476</numeroDeputadoID>
+				<idDocumento>7194964</idDocumento>
+				<urlDocumento>https://www.camara.leg.br/cota-parlamentar/documentos/publ/3476/2021/7194964.pdf</urlDocumento>
+		</despesa>
+	</dados>
+</xml>
