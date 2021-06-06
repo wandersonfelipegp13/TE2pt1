@@ -2,84 +2,90 @@ package m2.e3.tarefa.modelo;
 
 public class Deputado {
 
-	private String nomeParlamentar;
+	private String uri;
+	private String nome;
+	private int idLegislaturaInicial;
+	private int idLegislaturaFinal;
+	private String nomeCivil;
 	private String cpf;
-	private String idDeputado;
-	private String numeroCarteiraParlamentar;
-	private int legislatura;
-	private String siglaUF;
-	private String siglaPartido;
-	private int codigoLegislatura;
-	private int numeroSubCota;
-	private String descricao;
-	private int numeroEspecificacaoSubCota;
-	private String descricaoEspecificacao;
-	private String fornecedor;
-	private String cnpjCPF;
-	private int numero;
-	private int tipoDocumento;
-	private String dataEmissao;
-	private double valorDocumento;
-	private int valorGlosa;
-	private double valorLiquido;
-	private int mes;
-	private int ano;
-	private int parcela;
-	private String passageiro;
-	private String trecho;
-	private String lote;
-	private String ressarcimento;
-	private String restituicao;
-	private int numeroDeputadoID;
-	private int idDocumento;
-	private String urlDocumento;
+	private String siglaSexo;
+	private String urlRedeSocial;
+	private String urlWebsite;
+	private String dataNascimento;
+	private String dataFalecimento;
+	private String ufNascimento;
+	private String municipioNascimento;
 
-	public Deputado(String nomeParlamentar, String cpf, String idDeputado, String numeroCarteiraParlamentar,
-			int legislatura, String siglaUF, String siglaPartido, int codigoLegislatura, int numeroSubCota,
-			String descricao, int numeroEspecificacaoSubCota, String descricaoEspecificacao, String fornecedor,
-			String cnpjCPF, int numero, int tipoDocumento, String dataEmissao, double valorDocumento, int valorGlosa,
-			double valorLiquido, int mes, int ano, int parcela, String passageiro, String trecho, String lote,
-			String ressarcimento, String restituicao, int numeroDeputadoID, int idDocumento, String urlDocumento) {
+	public Deputado() {
 		super();
-		this.nomeParlamentar = nomeParlamentar;
-		this.cpf = cpf;
-		this.idDeputado = idDeputado;
-		this.numeroCarteiraParlamentar = numeroCarteiraParlamentar;
-		this.legislatura = legislatura;
-		this.siglaUF = siglaUF;
-		this.siglaPartido = siglaPartido;
-		this.codigoLegislatura = codigoLegislatura;
-		this.numeroSubCota = numeroSubCota;
-		this.descricao = descricao;
-		this.numeroEspecificacaoSubCota = numeroEspecificacaoSubCota;
-		this.descricaoEspecificacao = descricaoEspecificacao;
-		this.fornecedor = fornecedor;
-		this.cnpjCPF = cnpjCPF;
-		this.numero = numero;
-		this.tipoDocumento = tipoDocumento;
-		this.dataEmissao = dataEmissao;
-		this.valorDocumento = valorDocumento;
-		this.valorGlosa = valorGlosa;
-		this.valorLiquido = valorLiquido;
-		this.mes = mes;
-		this.ano = ano;
-		this.parcela = parcela;
-		this.passageiro = passageiro;
-		this.trecho = trecho;
-		this.lote = lote;
-		this.ressarcimento = ressarcimento;
-		this.restituicao = restituicao;
-		this.numeroDeputadoID = numeroDeputadoID;
-		this.idDocumento = idDocumento;
-		this.urlDocumento = urlDocumento;
 	}
 
-	public String getNomeParlamentar() {
-		return nomeParlamentar;
+	public Deputado(String uri, String nome, int idLegislaturaInicial, int idLegislaturaFinal, String nomeCivil,
+			String cpf, String siglaSexo, String urlRedeSocial, String urlWebsite, String dataNascimento,
+			String dataFalecimento, String ufNascimento, String municipioNascimento) {
+		super();
+		this.setUri(uri);
+		this.setNome(nome);
+		this.setIdLegislaturaInicial(idLegislaturaInicial);
+		this.setIdLegislaturaFinal(idLegislaturaFinal);
+		this.setNomeCivil(nomeCivil);
+		this.setCpf(cpf);
+		this.setSiglaSexo(siglaSexo);
+		this.setUrlRedeSocial(urlRedeSocial);
+		this.setUrlWebsite(urlWebsite);
+		this.setDataNascimento(dataNascimento);
+		this.setDataFalecimento(dataFalecimento);
+		this.setUfNascimento(ufNascimento);
+		this.setMunicipioNascimento(municipioNascimento);
+	}
+	
+	@Override
+	public String toString() {
+		return "URI=" + uri + "\nNome=" + nome + "\nID Legislatura Inicial=" + idLegislaturaInicial
+				+ "\nID Legislatura Final=" + idLegislaturaFinal + "\nNome Civil=" + nomeCivil + "\nCPF=" + cpf
+				+ "\nSigla Sexo=" + siglaSexo + "\nURL Rede Social=" + urlRedeSocial + "\nURL Website=" + urlWebsite
+				+ "\nData Nascimento=" + dataNascimento + "\nData Falecimento=" + dataFalecimento + "\nUF Nascimento="
+				+ ufNascimento + "\nMunicipio Nascimento=" + municipioNascimento;
 	}
 
-	public void setNomeParlamentar(String nomeParlamentar) {
-		this.nomeParlamentar = nomeParlamentar;
+	public String getUri() {
+		return uri;
+	}
+
+	public void setUri(String uri) {
+		this.uri = uri;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public int getIdLegislaturaInicial() {
+		return idLegislaturaInicial;
+	}
+
+	public void setIdLegislaturaInicial(int idLegislaturaInicial) {
+		this.idLegislaturaInicial = idLegislaturaInicial;
+	}
+
+	public int getIdLegislaturaFinal() {
+		return idLegislaturaFinal;
+	}
+
+	public void setIdLegislaturaFinal(int idLegislaturaFinal) {
+		this.idLegislaturaFinal = idLegislaturaFinal;
+	}
+
+	public String getNomeCivil() {
+		return nomeCivil;
+	}
+
+	public void setNomeCivil(String nomeCivil) {
+		this.nomeCivil = nomeCivil;
 	}
 
 	public String getCpf() {
@@ -90,236 +96,60 @@ public class Deputado {
 		this.cpf = cpf;
 	}
 
-	public String getIdDeputado() {
-		return idDeputado;
+	public String getSiglaSexo() {
+		return siglaSexo;
 	}
 
-	public void setIdDeputado(String idDeputado) {
-		this.idDeputado = idDeputado;
+	public void setSiglaSexo(String siglaSexo) {
+		this.siglaSexo = siglaSexo;
 	}
 
-	public String getNumeroCarteiraParlamentar() {
-		return numeroCarteiraParlamentar;
+	public String getUrlRedeSocial() {
+		return urlRedeSocial;
 	}
 
-	public void setNumeroCarteiraParlamentar(String numeroCarteiraParlamentar) {
-		this.numeroCarteiraParlamentar = numeroCarteiraParlamentar;
+	public void setUrlRedeSocial(String urlRedeSocial) {
+		this.urlRedeSocial = urlRedeSocial;
 	}
 
-	public int getLegislatura() {
-		return legislatura;
+	public String getUrlWebsite() {
+		return urlWebsite;
 	}
 
-	public void setLegislatura(int legislatura) {
-		this.legislatura = legislatura;
+	public void setUrlWebsite(String urlWebsite) {
+		this.urlWebsite = urlWebsite;
 	}
 
-	public String getSiglaUF() {
-		return siglaUF;
+	public String getDataNascimento() {
+		return dataNascimento;
 	}
 
-	public void setSiglaUF(String siglaUF) {
-		this.siglaUF = siglaUF;
+	public void setDataNascimento(String dataNascimento) {
+		this.dataNascimento = dataNascimento;
 	}
 
-	public String getSiglaPartido() {
-		return siglaPartido;
+	public String getDataFalecimento() {
+		return dataFalecimento;
 	}
 
-	public void setSiglaPartido(String siglaPartido) {
-		this.siglaPartido = siglaPartido;
+	public void setDataFalecimento(String dataFalecimento) {
+		this.dataFalecimento = dataFalecimento;
 	}
 
-	public int getCodigoLegislatura() {
-		return codigoLegislatura;
+	public String getUfNascimento() {
+		return ufNascimento;
 	}
 
-	public void setCodigoLegislatura(int codigoLegislatura) {
-		this.codigoLegislatura = codigoLegislatura;
+	public void setUfNascimento(String ufNascimento) {
+		this.ufNascimento = ufNascimento;
 	}
 
-	public int getNumeroSubCota() {
-		return numeroSubCota;
+	public String getMunicipioNascimento() {
+		return municipioNascimento;
 	}
 
-	public void setNumeroSubCota(int numeroSubCota) {
-		this.numeroSubCota = numeroSubCota;
-	}
-
-	public String getDescricao() {
-		return descricao;
-	}
-
-	public void setDescricao(String descricao) {
-		this.descricao = descricao;
-	}
-
-	public int getNumeroEspecificacaoSubCota() {
-		return numeroEspecificacaoSubCota;
-	}
-
-	public void setNumeroEspecificacaoSubCota(int numeroEspecificacaoSubCota) {
-		this.numeroEspecificacaoSubCota = numeroEspecificacaoSubCota;
-	}
-
-	public String getDescricaoEspecificacao() {
-		return descricaoEspecificacao;
-	}
-
-	public void setDescricaoEspecificacao(String descricaoEspecificacao) {
-		this.descricaoEspecificacao = descricaoEspecificacao;
-	}
-
-	public String getFornecedor() {
-		return fornecedor;
-	}
-
-	public void setFornecedor(String fornecedor) {
-		this.fornecedor = fornecedor;
-	}
-
-	public String getCnpjCPF() {
-		return cnpjCPF;
-	}
-
-	public void setCnpjCPF(String cnpjCPF) {
-		this.cnpjCPF = cnpjCPF;
-	}
-
-	public int getNumero() {
-		return numero;
-	}
-
-	public void setNumero(int numero) {
-		this.numero = numero;
-	}
-
-	public int getTipoDocumento() {
-		return tipoDocumento;
-	}
-
-	public void setTipoDocumento(int tipoDocumento) {
-		this.tipoDocumento = tipoDocumento;
-	}
-
-	public String getDataEmissao() {
-		return dataEmissao;
-	}
-
-	public void setDataEmissao(String dataEmissao) {
-		this.dataEmissao = dataEmissao;
-	}
-
-	public double getValorDocumento() {
-		return valorDocumento;
-	}
-
-	public void setValorDocumento(double valorDocumento) {
-		this.valorDocumento = valorDocumento;
-	}
-
-	public int getValorGlosa() {
-		return valorGlosa;
-	}
-
-	public void setValorGlosa(int valorGlosa) {
-		this.valorGlosa = valorGlosa;
-	}
-
-	public double getValorLiquido() {
-		return valorLiquido;
-	}
-
-	public void setValorLiquido(double valorLiquido) {
-		this.valorLiquido = valorLiquido;
-	}
-
-	public int getMes() {
-		return mes;
-	}
-
-	public void setMes(int mes) {
-		this.mes = mes;
-	}
-
-	public int getAno() {
-		return ano;
-	}
-
-	public void setAno(int ano) {
-		this.ano = ano;
-	}
-
-	public int getParcela() {
-		return parcela;
-	}
-
-	public void setParcela(int parcela) {
-		this.parcela = parcela;
-	}
-
-	public String getPassageiro() {
-		return passageiro;
-	}
-
-	public void setPassageiro(String passageiro) {
-		this.passageiro = passageiro;
-	}
-
-	public String getTrecho() {
-		return trecho;
-	}
-
-	public void setTrecho(String trecho) {
-		this.trecho = trecho;
-	}
-
-	public String getLote() {
-		return lote;
-	}
-
-	public void setLote(String lote) {
-		this.lote = lote;
-	}
-
-	public String getRessarcimento() {
-		return ressarcimento;
-	}
-
-	public void setRessarcimento(String ressarcimento) {
-		this.ressarcimento = ressarcimento;
-	}
-
-	public String getRestituicao() {
-		return restituicao;
-	}
-
-	public void setRestituicao(String restituicao) {
-		this.restituicao = restituicao;
-	}
-
-	public int getNumeroDeputadoID() {
-		return numeroDeputadoID;
-	}
-
-	public void setNumeroDeputadoID(int numeroDeputadoID) {
-		this.numeroDeputadoID = numeroDeputadoID;
-	}
-
-	public int getIdDocumento() {
-		return idDocumento;
-	}
-
-	public void setIdDocumento(int idDocumento) {
-		this.idDocumento = idDocumento;
-	}
-
-	public String getUrlDocumento() {
-		return urlDocumento;
-	}
-
-	public void setUrlDocumento(String urlDocumento) {
-		this.urlDocumento = urlDocumento;
+	public void setMunicipioNascimento(String municipioNascimento) {
+		this.municipioNascimento = municipioNascimento;
 	}
 
 }
