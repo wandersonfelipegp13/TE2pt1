@@ -55,7 +55,7 @@ public class MyHandlerSAX extends DefaultHandler {
 	}
 
 	public void endDocument() {
-		// System.out.print("\nFim do Parsing...");
+		System.out.print("\nFim do Parsing...");
 	}
 
 	public void startElement(String uri, String localName, String qName, Attributes atts) {
@@ -70,6 +70,10 @@ public class MyHandlerSAX extends DefaultHandler {
 	}
 
 	public void endElement(String uri, String localName, String qName) throws SAXException {
+		
+		if(qName.equalsIgnoreCase("deputado"))
+			deps.add(dep);
+		
 		tagAtual = "";
 	}
 
@@ -140,7 +144,6 @@ public class MyHandlerSAX extends DefaultHandler {
 		if (tagAtual.compareTo("municipioNascimento") == 0) {
 			// System.out.println("municipioNascimento: " + texto + "\n");
 			dep.setMunicipioNascimento(texto);
-			deps.add(dep);
 		}
 		
 	}

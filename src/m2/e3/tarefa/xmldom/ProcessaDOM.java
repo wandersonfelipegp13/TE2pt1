@@ -33,7 +33,7 @@ public class ProcessaDOM {
 		for (int i = 0; i < deps.size(); i++) {
 			System.out.print(deps.get(i).toString() + "\n\n");
 		}
-
+		
 	}
 
 }
