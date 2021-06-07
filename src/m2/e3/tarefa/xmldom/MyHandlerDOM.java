@@ -2,6 +2,8 @@ package m2.e3.tarefa.xmldom;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -13,11 +15,7 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
-import java.util.List;
-import java.util.ArrayList;
-
 import m2.e3.tarefa.modelo.Deputado;
-// import jdk.internal.org.xml.sax.SAXException;
 
 public class MyHandlerDOM {
 
