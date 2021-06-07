@@ -1,5 +1,8 @@
 package m2.e3.tarefa.modelo;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Deputado {
 
 	private String uri;
@@ -9,7 +12,7 @@ public class Deputado {
 	private String nomeCivil;
 	private String cpf;
 	private String siglaSexo;
-	private String urlRedeSocial;
+	private List<String> urlRedeSocial;
 	private String urlWebsite;
 	private String dataNascimento;
 	private String dataFalecimento;
@@ -31,7 +34,7 @@ public class Deputado {
 		this.setNomeCivil(nomeCivil);
 		this.setCpf(cpf);
 		this.setSiglaSexo(siglaSexo);
-		this.setUrlRedeSocial(urlRedeSocial);
+		this.addUrlRedeSocial(urlRedeSocial);
 		this.setUrlWebsite(urlWebsite);
 		this.setDataNascimento(dataNascimento);
 		this.setDataFalecimento(dataFalecimento);
@@ -105,11 +108,14 @@ public class Deputado {
 	}
 
 	public String getUrlRedeSocial() {
-		return urlRedeSocial;
+		return urlRedeSocial.toString();
 	}
 
-	public void setUrlRedeSocial(String urlRedeSocial) {
-		this.urlRedeSocial = urlRedeSocial;
+	public void addUrlRedeSocial(String urlRedeSocial) {
+		if(this.urlRedeSocial == null)
+			this.urlRedeSocial = new ArrayList<String>();
+		if(urlRedeSocial != null && urlRedeSocial != "" && !urlRedeSocial.contains("\n") && !urlRedeSocial.contains("\t"))
+			this.urlRedeSocial.add(urlRedeSocial);
 	}
 
 	public String getUrlWebsite() {

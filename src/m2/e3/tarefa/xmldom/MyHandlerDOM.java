@@ -1,4 +1,4 @@
-package m2.e3.tarefa;
+package m2.e3.tarefa.xmldom;
 
 import java.io.File;
 import java.io.IOException;
@@ -15,7 +15,7 @@ import org.xml.sax.SAXException;
 
 import java.util.List;
 import java.util.ArrayList;
-
+import java.util.Iterator;
 
 import m2.e3.tarefa.modelo.Deputado;
 // import jdk.internal.org.xml.sax.SAXException;
@@ -49,6 +49,7 @@ public class MyHandlerDOM {
 			if(nNode.getNodeType() == Node.ELEMENT_NODE) {
 				
 				Element elem = (Element) nNode;
+				Deputado dep = new Deputado();
 
 				Node node1 = elem.getElementsByTagName("uri").item(0);
 				String uri = node1.getTextContent();
@@ -71,8 +72,20 @@ public class MyHandlerDOM {
 				Node node7 = elem.getElementsByTagName("siglaSexo").item(0);
 				String siglaSexo = node7.getTextContent();
 				
+				
+				List<Node> node8 = new ArrayList<Node>();
+				node8.add(elem.getElementsByTagName("urlRedeSocial").item(0));
+				for (int j = 0; j < node8.size(); j++) {
+					String urlRedeSocial = node8.get(j).getTextContent();
+					dep.addUrlRedeSocial(urlRedeSocial);
+				}
+				
+				
+				/*
 				Node node8 = elem.getElementsByTagName("urlRedeSocial").item(0);
 				String urlRedeSocial = node8.getTextContent();
+				dep.addUrlRedeSocial(urlRedeSocial);
+				*/
 				
 				Node node9 = elem.getElementsByTagName("urlWebsite").item(0);
 				String urlWebsite = node9.getTextContent();
@@ -89,7 +102,6 @@ public class MyHandlerDOM {
 				Node node13 = elem.getElementsByTagName("municipioNascimento").item(0);
 				String municipioNascimento = node13.getTextContent();
 				
-				Deputado dep = new Deputado();
 				dep.setUri(uri);
 				dep.setNome(nome);
 				dep.setIdLegislaturaInicial(idLegislaturaInicial);
@@ -97,7 +109,7 @@ public class MyHandlerDOM {
 				dep.setNomeCivil(nomeCivil);
 				dep.setCpf(cpf);
 				dep.setSiglaSexo(siglaSexo);
-				dep.setUrlRedeSocial(urlRedeSocial);
+				// dep.addUrlRedeSocial(urlRedeSocial);
 				dep.setUrlWebsite(urlWebsite);
 				dep.setDataNascimento(dataNascimento);
 				dep.setDataFalecimento(dataFalecimento);

@@ -1,4 +1,4 @@
-package m2.e3.tarefa;
+package m2.e3.tarefa.xmldom;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -12,7 +12,7 @@ import org.xml.sax.SAXException;
 import m2.e3.tarefa.modelo.Deputado;
 
 
-public class TesteDOM {
+public class ProcessaDOM {
 
 	public static void main(String[] args) {
 		
