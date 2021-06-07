@@ -123,7 +123,7 @@ public class MyHandlerSAX extends DefaultHandler {
 
 		if (tagAtual.compareTo("urlWebsite") == 0) {
 			// System.out.println("urlWebsite: " + texto);
-			dep.setUrlWebsite(texto);
+			dep.addUrlWebsite(texto);
 		}
 
 		if (tagAtual.compareTo("dataNascimento") == 0) {

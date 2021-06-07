@@ -13,7 +13,7 @@ public class Deputado {
 	private String cpf;
 	private String siglaSexo;
 	private List<String> urlRedeSocial;
-	private String urlWebsite;
+	private List<String> urlWebsite;
 	private String dataNascimento;
 	private String dataFalecimento;
 	private String ufNascimento;
@@ -35,7 +35,7 @@ public class Deputado {
 		this.setCpf(cpf);
 		this.setSiglaSexo(siglaSexo);
 		this.addUrlRedeSocial(urlRedeSocial);
-		this.setUrlWebsite(urlWebsite);
+		this.addUrlWebsite(urlWebsite);
 		this.setDataNascimento(dataNascimento);
 		this.setDataFalecimento(dataFalecimento);
 		this.setUfNascimento(ufNascimento);
@@ -119,11 +119,14 @@ public class Deputado {
 	}
 
 	public String getUrlWebsite() {
-		return urlWebsite;
+		return urlWebsite.toString();
 	}
 
-	public void setUrlWebsite(String urlWebsite) {
-		this.urlWebsite = urlWebsite;
+	public void addUrlWebsite(String urlWebsite) {
+		if(this.urlWebsite == null)
+			this.urlWebsite = new ArrayList<String>();
+		if(urlWebsite != null && urlWebsite != "" && !urlWebsite.contains("\n") && !urlWebsite.contains("\t"))
+			this.urlWebsite.add(urlWebsite);
 	}
 
 	public String getDataNascimento() {

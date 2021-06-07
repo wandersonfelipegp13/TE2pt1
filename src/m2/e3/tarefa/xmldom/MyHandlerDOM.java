@@ -71,16 +71,19 @@ public class MyHandlerDOM {
 				String siglaSexo = node7.getTextContent();
 
 				Node node8 = elem.getElementsByTagName("urlRedeSocial").item(0);
-
 				NodeList a = node8.getChildNodes();
-
 				for (int j = 0; j < a.getLength(); j++) {
 					String urlRedeSocial = a.item(j).getTextContent();
 					dep.addUrlRedeSocial(urlRedeSocial);
 				}
 
 				Node node9 = elem.getElementsByTagName("urlWebsite").item(0);
-				String urlWebsite = node9.getTextContent();
+				NodeList b = node9.getChildNodes();
+				for (int j = 0; j < b.getLength(); j++) {
+					String urlWebsite = b.item(j).getTextContent();
+					dep.addUrlWebsite(urlWebsite);
+				}
+				
 
 				Node node10 = elem.getElementsByTagName("dataNascimento").item(0);
 				String dataNascimento = node10.getTextContent();
@@ -101,7 +104,6 @@ public class MyHandlerDOM {
 				dep.setNomeCivil(nomeCivil);
 				dep.setCpf(cpf);
 				dep.setSiglaSexo(siglaSexo);
-				dep.setUrlWebsite(urlWebsite);
 				dep.setDataNascimento(dataNascimento);
 				dep.setDataFalecimento(dataFalecimento);
 				dep.setUfNascimento(ufNascimento);
