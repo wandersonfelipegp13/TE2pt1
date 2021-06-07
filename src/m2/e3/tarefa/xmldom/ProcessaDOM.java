@@ -11,19 +11,17 @@ import org.xml.sax.SAXException;
 
 import m2.e3.tarefa.modelo.Deputado;
 
-
 public class ProcessaDOM {
 
 	public static void main(String[] args) {
-		
+
 		List<Deputado> deps = new ArrayList<Deputado>();
-		
+
 		try {
 			MyHandlerDOM myExempleDOM = new MyHandlerDOM();
-			
+
 			deps = myExempleDOM.fazerParsing("src/m2/e3/tarefa/files/deputados.xml");
-			
-			
+
 		} catch (ParserConfigurationException | SAXException | IOException e) {
 			StringBuilder msg = new StringBuilder();
 			msg.append("Erro:\n");
@@ -31,11 +29,10 @@ public class ProcessaDOM {
 			msg.append(e.toString());
 			System.out.println(msg);
 		}
-		
+
 		for (int i = 0; i < deps.size(); i++) {
 			System.out.print(deps.get(i).toString() + "\n\n");
 		}
-		
 
 	}
 
